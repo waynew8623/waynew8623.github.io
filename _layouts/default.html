@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+{% if page.wp_slug %}<link rel="canonical" href="https://waynetalk.com/{{ page.wp_slug }}/" />{% endif %}
+<meta name="description" content="{{ site.description }}">
+<style>
+body{font-family:-apple-system,"PingFang SC","Microsoft YaHei",sans-serif;max-width:820px;margin:0 auto;padding:0 18px;line-height:1.8;color:#222}
+header{padding:22px 0;border-bottom:1px solid #eee}header a{font-size:20px;font-weight:700;color:#111;text-decoration:none}
+header span{color:#888;font-size:13px;margin-left:10px}
+main{padding:10px 0 40px}footer{border-top:1px solid #eee;padding:18px 0;color:#888;font-size:13px}
+img{max-width:100%;height:auto}.original-box{background:#f6f8fa;border-left:4px solid #0969da;padding:10px 14px;margin:0 0 20px;font-size:14px}
+.meta{color:#888;font-size:13px}a{color:#0969da}
+</style>
+</head>
+<body>
+<header><a href="{{ '/' | relative_url }}">{{ site.title }}</a><span>waynetalk.com 博客镜像</span></header>
+<main>{{ content }}</main>
+<footer><p>本站为 <a href="https://waynetalk.com/">江狐说 waynetalk.com</a> 的 GitHub Pages 镜像站，文章版权归原站所有。</p></footer>
+</body>
+</html>
